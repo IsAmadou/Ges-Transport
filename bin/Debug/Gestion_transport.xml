@@ -1,0 +1,440 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Gestion_transport
+</name>
+</assembly>
+<members>
+<member name="T:Gestion_transport.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Gestion_transport.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Gestion_transport.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:Gestion_transport.Affecter_ChauffeursDao.AddChauffeurToVehicule(Gestion_transport.Affecter_Chauffeurs)">
+ <summary>
+ Affecter un chauffeur à un Vehicule
+ </summary>
+ <param name="Aff"></param>
+</member>
+<member name="M:Gestion_transport.Affecter_ChauffeursDao.UpdateChauffeurToVehicule(Gestion_transport.Affecter_Chauffeurs)">
+ <summary>
+ modifier les caracteristiques de l'affectation du chauffeur au véhicule
+ </summary>
+ <param name="Aff"></param>
+</member>
+<member name="M:Gestion_transport.Affecter_ChauffeursDao.DeleteChauffeurToVehicule(System.Int32)">
+ <summary>
+ Supprimer l'affectation d'un chauffeur à un vehicule
+ </summary>
+ <param name="Id_Affectation"></param>
+</member>
+<member name="M:Gestion_transport.Affecter_ChauffeursDao.getAffectation_ChauffeurById(System.Int32)">
+ <summary>
+ Recuperer une affectation par son id
+ </summary>
+ <param name="Id_Affectation"></param>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.Affecter_ChauffeursDao.getChauffeurByVehicule(System.String)">
+ <summary>
+ Recuperer la liste des chauffeurs ayant conduit un vehicule
+ </summary>
+ <param name="Immatriculation"></param>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.Affecter_ChauffeursDao.getVehiculeByChauffeur(System.Int32)">
+ <summary>
+ Recuperer la listes des vehicules ayant été conduis par un chauffeur
+ </summary>
+ <param name="Id_Chauffeur"></param>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.Affecter_ChauffeursDao.getAll">
+ <summary>
+ Recuperer l'historique de toutes les Affectations
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.ChauffeursDao.AddChauffeurs(Gestion_transport.Chauffeurs)">
+ <summary>
+ Ajouter un Chauffeur
+ </summary>
+ <param name="Chauf"></param>
+</member>
+<member name="M:Gestion_transport.ChauffeursDao.UpdateChauffeurs(Gestion_transport.Chauffeurs)">
+ <summary>
+ Modifier les caracteristiques d'un Chauffeur
+ </summary>
+ <param name="Chauf"></param>
+</member>
+<member name="M:Gestion_transport.ChauffeursDao.DeleteChauffeurs(System.Int32)">
+ <summary>
+ Supprimer un chauffeur
+ </summary>
+ <param name="Id_Chauffeur"></param>
+</member>
+<member name="M:Gestion_transport.ChauffeursDao.getChauffeurById(System.Int32)">
+ <summary>
+ Recuperer un Chauffeur par son Id
+ </summary>
+ <param name="Id_Chauffeur"></param>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.ChauffeursDao.getAll">
+ <summary>
+  Recuperer tous les chauffeurs
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.ChauffeursDao.getData">
+ <summary>
+ Remplir le dataGredView
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.ConnectionUtil.getInstance">
+ <summary>
+ établir la connection avec la BD
+ </summary>
+ <returns>Instance de connection</returns>
+</member>
+<member name="M:Gestion_transport.DeplacementDao.AddDeplacement(Gestion_transport.Deplacement)">
+ <summary>
+ Ajouter un Deplacement
+ </summary>
+ <param name="Dep"></param>
+</member>
+<member name="M:Gestion_transport.DeplacementDao.UpdateDeplacement(Gestion_transport.Deplacement)">
+ <summary>
+ Modifier les Carateristiques d'un deplacement
+ </summary>
+ <param name="Dep"></param>
+</member>
+<member name="M:Gestion_transport.DeplacementDao.DeleteDeplacement(System.Int32)">
+ <summary>
+ Supprimer un deplacement
+ </summary>
+ <param name="Id_Deplacement"></param>
+</member>
+<member name="M:Gestion_transport.DeplacementDao.getDaplacementById(System.Int32)">
+ <summary>
+ recuperer un eplacement par son Id
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.GarageDao.AddGarage(Gestion_transport.Garage)">
+ <summary>
+ Ajouter un Garage ayant reparer un véhicule
+ </summary>
+ <param name="Gar"></param>
+</member>
+<member name="M:Gestion_transport.GarageDao.UpdateGarage(Gestion_transport.Garage)">
+ <summary>
+ Modifier les Caracteristiques d'un garage
+ </summary>
+ <param name="Gar"></param>
+</member>
+<member name="M:Gestion_transport.GarageDao.getGarageById(System.Int32)">
+ <summary>
+ Recuperer un Garage par son Id
+ </summary>
+ <param name="Id_visite"></param>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.Historiques_UsersDao.DeleteHis_User(System.Int32)">
+ <summary>
+ Supprimer un historique
+ </summary>
+ <param name="Id_His"></param>
+</member>
+<member name="M:Gestion_transport.Historiques_UsersDao.getHis_UserById(System.Int32)">
+ <summary>
+ Recuperer un historique par son  Id
+ </summary>
+ <param name="Id_His"></param>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.Historiques_UsersDao.getData">
+ <summary>
+ Remplir le dataGredView
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.MarchandisesDao.AddMarchandises(Gestion_transport.Marchandises)">
+ <summary>
+ Ajouter une Marchandise
+ </summary>
+ <param name="Mar"></param>
+</member>
+<member name="M:Gestion_transport.MarchandisesDao.UpdateMarchandises(Gestion_transport.Marchandises)">
+ <summary>
+ Modifier les Caracteristiques d'une marchandise
+ </summary>
+ <param name="Mar"></param>
+</member>
+<member name="M:Gestion_transport.MarchandisesDao.DeleteMarchandises(System.Int32)">
+ <summary>
+ Supprimer une Marchandise
+ </summary>
+ <param name="Id_Marchandise"></param>
+</member>
+<member name="M:Gestion_transport.MarchandisesDao.getMarchandisesById(System.Int32)">
+ <summary>
+ Recuperer une marchandise par son Id
+ </summary>
+ <param name="Id_Marchandise"></param>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.MarchandisesDao.getAll">
+ <summary>
+ Recuperer la liste de toutes les Marchanises
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.MarchandisesDao.getData">
+ <summary>
+ Remplissage Du data gridview
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.Pieces_VehiculeDao.AddPieces_Vehicule(Gestion_transport.Pièces_Vehicule)">
+ <summary>
+ Ajouter des pièces au véhicule
+ </summary>
+ <param name="Pie"></param>
+</member>
+<member name="M:Gestion_transport.Pieces_VehiculeDao.UpdatePieces_Vehicule(Gestion_transport.Pièces_Vehicule)">
+ <summary>
+ Modifier les caractéristiques des pièces du véhicule
+ </summary>
+ <param name="Pie"></param>
+</member>
+<member name="M:Gestion_transport.Pieces_VehiculeDao.getPieces_VehiculeById(System.Int32)">
+ <summary>
+ Recuperer les piece par Id
+ </summary>
+ <param name="Id_Piece"></param>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.Pieces_VehiculeDao.getAll">
+ <summary>
+ Recuperer la liste de toutes les pièces
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.Pieces_VehiculeDao.getPiècesByVehicules(System.String)">
+ <summary>
+ Recuperer les pièces par Vehicule
+ </summary>
+ <param name="Immatriculation"></param>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.Réparations_VehiculeDao.AddVehiculeToGarage(Gestion_transport.Réparations_Vehicule)">
+ <summary>
+ Ajouter un Vehicule au Garage
+ </summary>
+ <param name="Rep"></param>
+</member>
+<member name="M:Gestion_transport.Réparations_VehiculeDao.UpdateVehiculeToGarage(Gestion_transport.Réparations_Vehicule)">
+ <summary>
+ Modifier les Caractéristiques de la visite
+ </summary>
+ <param name="Rep"></param>
+</member>
+<member name="M:Gestion_transport.Réparations_VehiculeDao.DeleteReparations_Vehicule(System.Int32)">
+ <summary>
+ Supprimer une Visite techniques
+ </summary>
+ <param name="Id_Reparation"></param>
+</member>
+<member name="M:Gestion_transport.Réparations_VehiculeDao.getReparations_vehiculeById(System.Int32)">
+ <summary>
+ recurer une reparation par son id
+ </summary>
+ <param name="Id_Reparation"></param>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.Réparations_VehiculeDao.getData">
+ <summary>
+ Remplir le dataGredView
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.TrajetDao.AddTrajet(Gestion_transport.Trajet)">
+ <summary>
+ Ajouter un Trajet
+ </summary>
+ <param name="Tra"></param>
+</member>
+<member name="M:Gestion_transport.TrajetDao.UpdateTrajet(Gestion_transport.Trajet)">
+ <summary>
+ Modifier les caracteristiques d'un trajet
+ </summary>
+ <param name="Tra"></param>
+</member>
+<member name="M:Gestion_transport.TrajetDao.DeleteTrajet(System.String)">
+ <summary>
+ Supprimer un trajet
+ </summary>
+ <param name="Ref"></param>
+</member>
+<member name="M:Gestion_transport.TrajetDao.getTrajetByRef(System.String)">
+ <summary>
+ Recuperer un trajet par sa reference
+ </summary>
+ <param name="Ref"></param>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.TrajetDao.getAll">
+ <summary>
+ Recuperer la liste de tous les Trajets
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.UtilisateursDao.AddUser(Gestion_transport.Utilisateurs)">
+ <summary>
+ Ajouter un utilisateur
+ </summary>
+ <param name="User"></param>
+</member>
+<member name="M:Gestion_transport.UtilisateursDao.UpdateUser(Gestion_transport.Utilisateurs)">
+ <summary>
+ Modifier les Caracteristiques d'un Utilisateur 
+ </summary>
+ <param name="User"></param>
+</member>
+<member name="M:Gestion_transport.UtilisateursDao.DeleteUser(System.Int32)">
+ <summary>
+ Supprimer un Utilisateur
+ </summary>
+ <param name="Id_User"></param>
+</member>
+<member name="M:Gestion_transport.UtilisateursDao.getUserById(System.Int32)">
+ <summary>
+ Recuperer un utilisateur par son Id
+ </summary>
+ <param name="Id_User"></param>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.UtilisateursDao.getAll">
+ <summary>
+ Recuperer la liste de tous les utilisateus
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.UtilisateursDao.getData">
+ <summary>
+ Remplir le dataGredView
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.VehiculesDao.AddVehicules(Gestion_transport.Véhicules)">
+ <summary>
+ ajouter un vehicule
+ </summary>
+ <param name="Veh"></param>
+</member>
+<member name="M:Gestion_transport.VehiculesDao.UpdateVehicules(Gestion_transport.Véhicules)">
+ <summary>
+ modifier les carractéristiques d'un vehicule
+ </summary>
+ <param name="Veh"></param>
+</member>
+<member name="M:Gestion_transport.VehiculesDao.DeleteVehicules(System.String)">
+ <summary>
+ supprimer un vehicule
+ </summary>
+ <param name="Immatriculation"></param>
+</member>
+<member name="M:Gestion_transport.VehiculesDao.getVehiculeByImm(System.String)">
+ <summary>
+ recuperer un vehicule par son immatriculation
+ </summary>
+ <param name="Immatriculation"></param>
+ <returns></returns>
+</member>
+<member name="M:Gestion_transport.VehiculesDao.getAll">
+ <summary>
+ recuperer tous les vehicules
+ </summary>
+ <returns></returns>
+</member>
+<member name="T:Gestion_transport.TRANSPORTDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Gestion_transport.TRANSPORTDataSet.VehiculesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Gestion_transport.TRANSPORTDataSet.VehiculesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Gestion_transport.TRANSPORTDataSet.VehiculesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Gestion_transport.TRANSPORTDataSetTableAdapters.VehiculesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Gestion_transport.TRANSPORTDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Gestion_transport.TRANSPORTDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Gestion_transport.TRANSPORTDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Gestion_transport.TRANSPORTDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Gestion_transport.TRANSPORTDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Gestion_transport.TRANSPORTDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Gestion_transport.TRANSPORTDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Gestion_transport.TRANSPORTDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Gestion_transport.TRANSPORTDataSetTableAdapters.TableAdapterManager.UpdateAll(Gestion_transport.TRANSPORTDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Gestion_transport.TRANSPORTDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Gestion_transport.TRANSPORTDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>
